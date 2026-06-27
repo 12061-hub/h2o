@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>นํ้าเรามีไรจะขอ 💖</title>
+
+<style>
+body{
+    margin:0;
+    font-family:sans-serif;
+    background:linear-gradient(135deg,#ffb6c1,#ffe4ec);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    text-align:center;
+}
+
+.box{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+h1{
+    color:#ff4d6d;
+}
+
+button{
+    padding:12px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    margin:10px;
+    transition:0.3s;
+}
+
+#yes{
+    background:#ff4d6d;
+    color:white;
+}
+
+#no{
+    background:#ccc;
+    color:black;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+    <h1>💖 เปิดจายให้เรานะะ 💖</h1>
+    <p>ตอบดี ๆ นะ นะนะนะนะนะ 😳</p>
+
+    <button id="yes" onclick="yes()">ตกลง 💕</button>
+    <button id="no" onclick="no()">ไม่ ❌</button>
+
+    <p id="msg"></p>
+</div>
+
+<script>
+function yes(){
+    document.body.innerHTML = `
+    <div style="text-align:center;font-family:sans-serif;">
+        <h1 style="font-size:60px;color:#ff4d6d;">เย้!!! 💖</h1>
+        <p style="font-size:25px;">เราดีใจมากเลย 🥰</p>
+    </div>`;
+}
+
+function no(){
+    document.getElementById("msg").innerHTML =
+    "😳 ลองคิดไหมเราขออ";
+}
+</script>
+
+</body>
+</html>
