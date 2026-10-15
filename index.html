@@ -2,7 +2,7 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
-<title>พี่เเก้มค้าบบบบ 💖</title>
+<title> ฮั่นเเน่พวกอ้วนกดลิ้งมาทะไม ♡</title>
 
 <style>
 body{
@@ -61,7 +61,7 @@ button{
 <body>
 
 <div class="box" id="box">
-    <h1>💌 คิดถึงพี่เเก้มจัง </h1>
+    <h1>💌 มาส่องเพราะคิดถึงอะดิ▼・ᴥ・▼  </h1>
     <button id="heartBtn" onclick="startLove()">❤️</button>
 </div>
 
@@ -72,8 +72,8 @@ let noCount = 0;
 // หน้า 1 → กดหัวใจ
 function startLove(){
     document.getElementById("box").innerHTML = `
-        <h1> ผมขอโทดที่อ่านไม่ตอบค้าบพี่เเก้มมม</h1>
-        <p> ดีกันน้าาาา น้ะคั้บบ 😳</p>
+        <h1> เรารักทุกคนนะ ิอิอิ</h1>
+        <p>  (｡>д <) </p>
         <button onclick="nextStep()">ต่อไป ➜</button>
     `;
 
@@ -93,12 +93,12 @@ function createHeart(){
     setTimeout(()=>heart.remove(),3000);
 }
 
-// ไปหน้าถามเป็นแฟน
+// ไปหน้าถ่าม
 function nextStep(){
     document.getElementById("box").innerHTML = `
-        <h1> เย่รักนะคั้บพี่เเก้ม</h1>
-        <button onclick="yes()">ตกลง 💖</button>
-        <button id="noBtn" onmouseover="runAway()">ไม่ ❌</button>
+        <h1> ทุกคนรักเราไหม </h1>
+        <button onclick="yes()">รักโฮริโอ้ 💖</button>
+        <button id="noBtn" onmouseover="runAway()">ไม่รักโอริโฮ้❌</button>
     `;
 }
 
@@ -106,7 +106,7 @@ function nextStep(){
 function yes(){
     document.body.innerHTML = `
         <h1 style="font-size:60px;color:#ff4d6d;text-align:center;">
-        ดีกันนน!!! 💖🥰
+        เราก็รักเเกทุกคนเหมือนกัน  (｡￫‿￩｡)
         </h1>
     `;
 }
@@ -117,7 +117,7 @@ function runAway(){
 
     if(noCount >= 10){
         btn.style.position = "static";
-        btn.innerHTML = "เย่่่่่ รักพี่เเก้มม 😳";
+        btn.innerHTML = "กากมากกกกไม่รักเราอะดิชิ";
         return;
     }
 
